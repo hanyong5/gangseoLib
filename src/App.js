@@ -28,16 +28,16 @@ function App() {
     <div className="globalContainer">
       <Routes>
         {/* 메인 페이지 route */}
-        <Route
+        {/* <Route
           path="/"
           element={<MainPage />}
         ></Route>
         <Route
           path="/chatbot"
           element={<Chatbot />}
-        ></Route>
+        ></Route> */}
         <Route
-          path="/Libabout"
+          path="/"
           element={<Libabout />}
         ></Route>
         <Route
