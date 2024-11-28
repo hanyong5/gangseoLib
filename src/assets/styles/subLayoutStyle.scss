@@ -1,0 +1,277 @@
+$pointColor: #ee2b74;
+$defaultColor: #333333;
+$secondColor: #868686;
+$inactiveColor: #adadad;
+/* Sub Layout */
+.subBgWrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/subBackgroung.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.subWrap {
+  width: 100%;
+  height: 100%;
+}
+.titleWrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 50px 20px 20px 120px;
+  width: 100%;
+  font-size: 56px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+.subTitleWrap {
+  position: absolute;
+  font-size: 56px;
+}
+
+/*Sub TopButton*/
+.TopMenuWrap {
+  position: fixed;
+  display: flex;
+  top: 0px;
+  right: 60px;
+  z-index: 100;
+  .TopMenuHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 0 0 0 20px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
+    background: linear-gradient(130deg, #ee2b74, #78278b);
+  }
+  .TopMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to top, #f1f1f1, #ffffff);
+  }
+}
+
+// content Text
+.firestTitle {
+  display: flex;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  img {
+    margin-right: 10px;
+    object-fit: cover;
+  }
+}
+.subCntWrap {
+  width: 100%;
+  height: 100%;
+}
+
+.cntTextWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  // 스크롤바 스타일
+  &::-webkit-scrollbar {
+    width: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #ffb1cf;
+    border-radius: 20px;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: #e6e6e6;
+    border-radius: 20px;
+  }
+}
+.cntWrapBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.infoTextBox {
+  width: 100%;
+  padding: 0 30px 0 0px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 50px;
+    background: #f2f2f2;
+    border: solid 1px #d4d4d4;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+  }
+  div::before {
+    display: inline-block;
+    content: "";
+    width: 110px;
+    height: 110px;
+    background: #f2f2f2 url("../images/iconInfo.svg");
+    background-repeat: no-repeat;
+  }
+}
+.cntTextHalfBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  padding: 20px 20px;
+  margin-bottom: 60px;
+  div {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    line-height: 64px;
+    .textBoxType {
+      width: 100%;
+      h4 {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: 600;
+        background: $pointColor;
+      }
+      p {
+        margin-bottom: 10px;
+        font-weight: 600;
+        span {
+          color: $pointColor;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+.cntTextBox {
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 60px;
+  line-height: 50px;
+  span {
+    font-weight: 600;
+  }
+  .textHalfBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  .textPoint {
+    color: $pointColor;
+  }
+  div {
+    margin-bottom: 50px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .inner {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    .textBoxType1 {
+      margin-left: 10px;
+      margin-bottom: 10px;
+      padding: 0 10px 0 50px;
+      font-weight: 600;
+      background: url("../images/iconBullet01.svg") left center;
+      background-repeat: no-repeat;
+    }
+    .textBoxType2 {
+      margin-left: 20px;
+      padding: 0 20px 0 40px;
+      background: url("../images/iconBullet02.svg") left -5px;
+      background-repeat: no-repeat;
+    }
+    .textBoxType3 {
+      margin-left: 40px;
+      padding: 0 30px 0 40px;
+      background: url("../images/iconBullet03.svg") left top;
+      background-repeat: no-repeat;
+    }
+    .imgBox {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+.defaultTable {
+  width: calc(100% - 60px);
+  margin-left: 40px;
+  border-top: 3px solid $secondColor;
+  border-collapse: collapse;
+  color: $defaultColor;
+  th,
+  td {
+    border-right: 1px solid $secondColor;
+    padding: 0; // 불필요한 패딩 제거
+    vertical-align: middle; // 기존 테이블 셀의 세로 정렬 유지
+    text-align: center; // 텍스트 가로 정렬
+    &:last-child {
+      border-right: none;
+    }
+    &.lastTd {
+      border-right: 1px solid $secondColor;
+    }
+  }
+  thead {
+    background: #e3e7f0;
+    text-align: center;
+    border-bottom: solid 1px $secondColor;
+    th {
+      font-weight: 600;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: solid 1px $secondColor;
+    }
+    span {
+      font-weight: 600;
+    }
+    td {
+      padding: 20px;
+    }
+    td.textLeft {
+      text-align: left;
+    }
+  }
+}
+.imgCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.mb-2 {
+  margin-bottom: 20px !important;
+}
+.mb-3 {
+  margin-bottom: 30px !important;
+}
+.mb-6 {
+  margin-bottom: 60px !important;
+}

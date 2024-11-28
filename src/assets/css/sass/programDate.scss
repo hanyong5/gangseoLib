@@ -1,0 +1,145 @@
+.programTable {
+  width: 100%;
+  width: calc(100% - 60px);
+  border-collapse: collapse;
+  tbody {
+    tr:first-child {
+      border-top: solid 3px #868686;
+    }
+    tr:last-child {
+      border-bottom: solid 3px #868686;
+    }
+  }
+  .contentBox {
+  }
+  .line {
+    border-bottom: 1px solid #868686;
+
+    .left {
+      width: 300px;
+      background-color: #f2f2f2;
+      .leftWrap {
+        .date {
+          padding: 20px;
+          text-align: start;
+          font-size: 32px;
+          line-height: 64px;
+        }
+      }
+    }
+    .right {
+      padding: 20px;
+      .rightWrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        .text {
+          display: flex;
+          gap: 10px;
+          text-align: start;
+          font-size: 32px;
+          line-height: 46px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+//
+$table-width: 100%;
+$column-1-width: 300px;
+$column-2-width: 542px;
+$border-color: #868686;
+
+.custom-table {
+  width: $table-width;
+  border-collapse: collapse;
+  //   table-layout: fixed; /* 고정된 테이블 레이아웃을 사용 */
+
+  td {
+    border: 1px solid $border-color;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px; /* 첫 번째 열의 너비 고정 */
+    &:nth-child(2) {
+      width: 1260px; /* 두 번째 열의 너비 고정 */
+    }
+  }
+
+  .dynamic-row {
+    height: auto; /* 높이를 자동으로 설정 */
+  }
+
+  .dynamic-content {
+    padding: 1rem; /* 여유 공간을 위한 패딩 */
+    white-space: normal; /* 텍스트가 줄바꿈 가능하도록 설정 */
+    word-wrap: break-word; /* 긴 단어를 자동으로 줄바꿈 */
+  }
+
+  .content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+}
+.contentInfos {
+  font-weight: 600;
+}
+.cntWrapBox {
+  .progranWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0px;
+  }
+  .handleMonth {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 60px 20px 20px;
+    .changeMonth {
+      width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+    .eventInfo {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      .infoInner {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 24px;
+        .infoText {
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.left {
+  border-left: none !important;
+}
+
+.right {
+  border-right: none !important;
+}
+
+.flexs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

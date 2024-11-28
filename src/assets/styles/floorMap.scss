@@ -1,0 +1,146 @@
+$pointColor: #ee2b74;
+$defaultColor: #333333;
+$secondColor: #868686;
+$inactiveColor: #adadad;
+$backPointColor: #e3e7f0;
+.floorMapTabs {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        width: 210px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        font-size: 30px;
+        .tab {
+            height: 100%;
+            padding: 10px 40px;
+            border: none;
+            background: $backPointColor;
+            cursor: pointer;
+            font-size: 30px;
+            font-weight: 600;
+            border-top: solid 1px $inactiveColor;
+            &.active {
+                font-size: 30px;
+                color: #ffffff;
+                border: 1px solid $pointColor;
+                background: $pointColor;
+            }
+        }
+        .tab:first-child {
+            border-top: none;
+        }
+    }
+
+    .tabContent {
+        height: 700px;
+        .areaButtons {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+
+            .mapButton {
+                padding: 10px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #0056b3;
+                }
+            }
+        }
+    }
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999;
+    opacity: 0;
+
+    &.open {
+        opacity: 1;
+        pointer-events: auto;
+
+        .modalContent {
+            transform: translateX(0);
+        }
+
+        .closeButton {
+            transform: translateY(0);
+        }
+    }
+
+    &.close {
+        opacity: 0;
+
+        .modalContent {
+            transform: translateX(100%);
+        }
+
+        .closeButton {
+            transform: translateY(-100%);
+        }
+    }
+}
+
+.modalContent {
+    position: relative;
+    max-width: 1450px;
+    width: 100%;
+    height: 100%;
+    padding: 40px 60px 40px 40px;
+    background-color: #ffffff;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    .mapPlaceholder {
+        display: flex;
+        justify-content: center;
+        height: 88%;
+        overflow-y: scroll;
+        // 스크롤바 스타일
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #ffb1cf;
+            border-radius: 20px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #e6e6e6;
+            border-radius: 20px;
+        }
+    }
+    .closeButton {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: -110px;
+        top: 55px;
+        color: white;
+        border: none;
+        background: url("../images/iconClose.svg");
+        background-repeat: no-repeat;
+        font-size: 0;
+        cursor: pointer;
+        z-index: 999;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%);
+    }
+}

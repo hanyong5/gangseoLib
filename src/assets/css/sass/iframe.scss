@@ -1,0 +1,12 @@
+.iframeContainer {
+  .iframeInner {
+    display: flex;
+    justify-content: center;
+    .setIframe {
+      // width: 1150px;
+      width: 1000px;
+      height: 650px;
+      scale: 1.1;
+    }
+  }
+}

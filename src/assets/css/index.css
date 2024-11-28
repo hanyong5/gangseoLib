@@ -1,0 +1,17 @@
+/*
+.background {
+  background-image: url(../images/background.svg);
+  background-repeat: no-repeat;
+}
+
+.frame {
+  width: 1920px;
+  height: 1200px;
+}
+*/
+
+/* 전역 css */
+@import url(./global.css);
+
+/* 도서관 안내 */
+@import url(./sass/libabout.scss);
