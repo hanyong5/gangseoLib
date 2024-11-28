@@ -19,8 +19,7 @@ import Program from "./pages/Libabout/menus/Program";
 import Wifi from "./pages/Libabout/menus/Wifi";
 import Libsetabout from "./pages/LibSetAbout/LibSetAbout";
 import SubTest from "./pages/LibSetAbout/SubTest";
-import ReadEbook from "./pages/ReadBook/data/ReadEbook";
-import Readbook from "./pages/ReadBook/ReadBook";
+
 import SerchBook from "./pages/SerchBook/SerchBook";
 import Waiting from "./pages/Waiting/Waiting";
 
@@ -45,10 +44,7 @@ function App() {
           path="/libsetabout"
           element={<Libsetabout />}
         ></Route>
-        <Route
-          path="/readbook"
-          element={<Readbook />}
-        ></Route>
+
         {/* 서브 페이지 테스트 route */}
         <Route
           path="/subTest"
@@ -99,12 +95,6 @@ function App() {
         <Route
           path="/Wifi"
           element={<Wifi />}
-        ></Route>
-
-        {/* 도서 읽어주기 ebook route */}
-        <Route
-          path={`/readbook/ebook/:title`}
-          element={<ReadEbook />}
         ></Route>
 
         {/* 이벤트 route */}
