@@ -30,17 +30,29 @@ function libabout() {
     { title: "시설 이용 안내", icon: a11, link: "/FacilityUse" },
   ];
 
-  useEffect(() => {
-    const audio = new Audio("/audio/audio_first.mp3"); // MP3 파일 경로 지정
-    audio.play().catch((err) => {
-      console.error("Audio playback failed:", err);
-    });
+    const AudioPlayer = () => {
+        useEffect(() => {
+            const playAudio = async () => {
+                try {
+                    const audio = new Audio("/audio/audio_first.mp3"); // MP3 파일 경로 지정
+                    await audio.play(); // 비동기 실행
+                } catch (err) {
+                    console.error("Audio playback failed:", err);
+                }
+            };
 
-    return () => {
-      audio.pause(); // 오디오 정지
-      audio.currentTime = 0; // 재생 위치 초기화
+            playAudio(); // 비동기 함수 호출
+
+            return () => {
+                // 정리(clean-up)
+                const audio = new Audio("/audio/audio_first.mp3");
+                audio.pause(); // 오디오 정지
+                audio.currentTime = 0; // 재생 위치 초기화
+            };
+        }, []); // 빈 배열로 설정하여 컴포넌트 마운트 시 한 번만 실행
+
+        return <div></div>;
     };
-  }, []); // 빈 배열로 설정하여 컴포넌트 마운트 시 한 번만 실행
   return (
     <>
       <SubBackWrap>
