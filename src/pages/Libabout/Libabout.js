@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import a8 from "../../assets/icons/Component 10.svg";
 import a9 from "../../assets/icons/Component 11.svg";
 import a10 from "../../assets/icons/Component 12.svg";
@@ -16,36 +16,53 @@ import { DepthTopMenu } from "../../components/Layout/TopMenu";
 import LibaboutBtn from "../../components/LibaboutBtn";
 
 function libabout() {
-    const menuList = [
-        { title: "자료기증 관련 안내", icon: a1, link: "/Donation" },
-        { title: "와이파이 안내", icon: a2, link: "/Wifi" },
-        { title: "희망도서 신청 안내", icon: a3, link: "/bookrequest" },
-        { title: "택배 대출 서비스", icon: a4, link: "/DeliveryLoan" },
-        { title: "사물함 안내", icon: a5, link: "/Locker" },
-        { title: "대출증, 회원증 안내", icon: a6, link: "/MembershipCard" },
-        { title: "복사, 인쇄, 출력, 스캔", icon: a7, link: "/Printing" },
-        { title: "식당, 매점 운영 안내", icon: a8, link: "/Cafeteria" },
-        { title: "프로그램 안내", icon: a9, link: "/Program" },
-        { title: "주차장 이용 안내", icon: a10, link: "/Parking" },
-        { title: "시설 이용 안내", icon: a11, link: "/FacilityUse" },
-    ];
-    return (
-        <>
-            <SubBackWrap>
-                <DepthTopMenu/>
-                <div className="conWrap">
-                    <Title>도서관 안내</Title>
-                    <div className="libabout">
-                        <div className="libContainer">
-                            {menuList.map((item, idx) => {
-                                return <LibaboutBtn key={idx} item={item}/>;
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </SubBackWrap>
-        </>
-);
+  const menuList = [
+    { title: "자료기증 관련 안내", icon: a1, link: "/Donation" },
+    { title: "와이파이 안내", icon: a2, link: "/Wifi" },
+    { title: "희망도서 신청 안내", icon: a3, link: "/bookrequest" },
+    { title: "택배 대출 서비스", icon: a4, link: "/DeliveryLoan" },
+    { title: "사물함 안내", icon: a5, link: "/Locker" },
+    { title: "대출증, 회원증 안내", icon: a6, link: "/MembershipCard" },
+    { title: "복사, 인쇄, 출력, 스캔", icon: a7, link: "/Printing" },
+    { title: "식당, 매점 운영 안내", icon: a8, link: "/Cafeteria" },
+    { title: "프로그램 안내", icon: a9, link: "/Program" },
+    { title: "주차장 이용 안내", icon: a10, link: "/Parking" },
+    { title: "시설 이용 안내", icon: a11, link: "/FacilityUse" },
+  ];
+
+  useEffect(() => {
+    const audio = new Audio("/audio/audio_first.mp3"); // MP3 파일 경로 지정
+    audio.play().catch((err) => {
+      console.error("Audio playback failed:", err);
+    });
+
+    return () => {
+      audio.pause(); // 오디오 정지
+      audio.currentTime = 0; // 재생 위치 초기화
+    };
+  }, []); // 빈 배열로 설정하여 컴포넌트 마운트 시 한 번만 실행
+  return (
+    <>
+      <SubBackWrap>
+        <DepthTopMenu />
+        <div className="conWrap">
+          <Title>도서관 안내</Title>
+          <div className="libabout">
+            <div className="libContainer">
+              {menuList.map((item, idx) => {
+                return (
+                  <LibaboutBtn
+                    key={idx}
+                    item={item}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </SubBackWrap>
+    </>
+  );
 }
 
 export default libabout;
