@@ -6,11 +6,11 @@ import SmoothLink from "./SmoothLink";
 function DepthTopMenu() {
   return (
     <div className="TopMenuWrap">
-      <SmoothLink to={"/"}>
+     {/* <SmoothLink to={"/"}>
         <div className="TopMenuHome">
           <TopMenuIcon iconName="iconHome" />
         </div>
-      </SmoothLink>
+      </SmoothLink>*/}
     </div>
   );
 }
@@ -26,11 +26,11 @@ function SubTopMenu() {
   };
   return (
     <div className="TopMenuWrap">
-      <SmoothLink to={"/"}>
+     {/* <SmoothLink to={"/"}>
         <div className="TopMenuHome">
           <TopMenuIcon iconName="iconHome" />
         </div>
-      </SmoothLink>
+      </SmoothLink>*/}
       {/* <Link to="/libabout"> */}
       <div
         className="TopMenu"
@@ -38,12 +38,12 @@ function SubTopMenu() {
       >
         <TopMenuIcon iconName="iconMenu" />
       </div>
-      <div
+      {/*<div
         className="TopMenu"
         onClick={handleClose}
       >
         <TopMenuIcon iconName="iconMenu" />
-      </div>
+      </div>*/}
       {/* </Link> */}
     </div>
   );

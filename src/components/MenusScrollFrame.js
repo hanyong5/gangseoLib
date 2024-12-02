@@ -4,7 +4,7 @@ import CntWrap from "./TextBoxs/CntWrap";
 
 function MenusScrollFrame({ children }) {
   return (
-    <div className="menusScroll frame background">
+    <div className="menusScroll frame subCont">
       <div className="scrollFrame">
         <CntWrap>{children}</CntWrap>
       </div>

@@ -7,12 +7,14 @@ import Title from "../../../components/Layout/Title";
 
 function Printing() {
   return (
-    <SubBackWrap>
-      <SubTopMenu />
-      <Title>복사, 인쇄, 출력, 스캔</Title>
-      <MenusScrollFrame children={<PrintingData />} />
-    </SubBackWrap>
-  );
+      <SubBackWrap>
+          <SubTopMenu/>
+          <div className="conWrap">
+              <Title>복사, 인쇄, 출력, 스캔</Title>
+              <MenusScrollFrame children={<PrintingData/>}/>
+          </div>
+      </SubBackWrap>
+);
 }
 
 export default Printing;

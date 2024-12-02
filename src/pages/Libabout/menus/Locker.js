@@ -9,12 +9,14 @@ function Locker() {
   const title = "사물함 안내";
 
   return (
-    <SubBackWrap>
-      <SubTopMenu />
-      <Title>{title}</Title>
-      <MenusScrollFrame children={<LockerData />} />
-    </SubBackWrap>
-  );
+      <SubBackWrap>
+          <SubTopMenu/>
+          <div className="conWrap">
+              <Title>{title}</Title>
+              <MenusScrollFrame children={<LockerData/>}/>
+          </div>
+      </SubBackWrap>
+);
 }
 
 export default Locker;

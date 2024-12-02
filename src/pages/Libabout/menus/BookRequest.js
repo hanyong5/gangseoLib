@@ -10,11 +10,13 @@ function BookRequest() {
 
     return (
         <SubBackWrap>
-            <SubTopMenu />
-            <Title>{title}</Title>
-            <MenusScrollFrame children={<BookRequestData />} />
+            <SubTopMenu/>
+            <div className="conWrap">
+                <Title>{title}</Title>
+                <MenusScrollFrame children={<BookRequestData/>}/>
+            </div>
         </SubBackWrap>
-    );
+);
 }
 
 export default BookRequest;

@@ -9,12 +9,14 @@ function DeliveryLoan() {
   const title = "택배대출 안내";
 
   return (
-    <SubBackWrap>
-      <SubTopMenu />
-      <Title>{title}</Title>
-      <MenusScrollFrame children={<DeliveryLoanData />} />
-    </SubBackWrap>
-  );
+      <SubBackWrap>
+          <SubTopMenu/>
+          <div className="conWrap">
+              <Title>{title}</Title>
+              <MenusScrollFrame children={<DeliveryLoanData/>}/>
+          </div>
+      </SubBackWrap>
+);
 }
 
 export default DeliveryLoan;

@@ -41,34 +41,37 @@ function SwiperComponent({ mainTitle, tabs, data, ContentsData }) {
                     ))}
                 </div>
             </div>
-            <div className="contentWrap"></div>
-            <Swiper
-                ref={swiperRef}
-                effect={"creative"}
-                creativeEffect={{
-                    prev: {
-                        shadow: true,
-                        translate: [0, 0, -400],
-                    },
-                    next: {
-                        translate: ["100%", 0, 0],
-                    },
-                }}
-                grabCursor={true}
-                onSlideChange={handleSlideChange}
-                navigation={true}
-                modules={[Pagination, Navigation, EffectCreative]}
-                className="mySwiper"
-            >
-                {data.map((item, index) => (
-                    <SwiperSlide key={index}>
-                        <div className="subCntWrap">
-                            {/* 각 슬라이드에 맞는 ContentsData를 렌더링 */}
-                            {item.ContentsData}
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+            <div className="swWrap">
+                <div className="contentWrap"></div>
+                <Swiper
+                    ref={swiperRef}
+                    effect={"creative"}
+                    creativeEffect={{
+                        prev: {
+                            shadow: true,
+                            translate: [0, 0, -400],
+                        },
+                        next: {
+                            translate: ["100%", 0, 0],
+                        },
+                    }}
+                    grabCursor={true}
+                    onSlideChange={handleSlideChange}
+                    navigation={true}
+                    modules={[Pagination, Navigation, EffectCreative]}
+                    className="mySwiper"
+                >
+                    {data.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="subCntWrap">
+                                {/* 각 슬라이드에 맞는 ContentsData를 렌더링 */}
+                                {item.ContentsData}
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
+
         </div>
     );
 }

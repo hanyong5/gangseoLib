@@ -18,7 +18,7 @@ $inactiveColor: #adadad;
 .titleWrap {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   padding: 50px 20px 20px 120px;
   width: 100%;
   font-size: 56px;
@@ -83,6 +83,8 @@ $inactiveColor: #adadad;
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-left: 41px;
+  padding-right: 28px;
   // 스크롤바 스타일
   &::-webkit-scrollbar {
     width: 10px;
@@ -275,3 +277,17 @@ $inactiveColor: #adadad;
 .mb-6 {
   margin-bottom: 60px !important;
 }
+
+.conWrap{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .titleWrap{}
+  .subCont{
+    //background: #f00;
+    flex:1 0  auto;
+    height:80%
+  }
+
+}
+

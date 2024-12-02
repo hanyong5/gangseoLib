@@ -662,19 +662,21 @@ function Program() {
 
     return (
         <SubBackWrap>
-            <SubTopMenu />
-            <Title>프로그램 안내</Title>
-            <MenusScrollFrame
-                children={
-                    <Month9Data
-                        children={changMonth[currentMonth]}
-                        months={months}
-                        handleMonth={handleMonth}
-                    />
-                }
-            />
+            <SubTopMenu/>
+            <div className="conWrap">
+                <Title>프로그램 안내</Title>
+                <MenusScrollFrame
+                    children={
+                        <Month9Data
+                            children={changMonth[currentMonth]}
+                            months={months}
+                            handleMonth={handleMonth}
+                        />
+                    }
+                />
+            </div>
         </SubBackWrap>
-    );
+);
 }
 
 export default Program;

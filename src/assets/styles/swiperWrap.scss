@@ -11,8 +11,8 @@ $inactiveColor: #adadad;
 .contentWrap {
     position: absolute;
 
-    width: 89%;
-    height: 650px;
+    width: 90%;
+    height: 80vh;
     // height: 70%;
     left: 50%;
     transform: translateX(-50%);
@@ -25,16 +25,25 @@ $inactiveColor: #adadad;
 
 .tabContainer {
     max-width: 100%;
-    margin: 0 auto;
-    padding: 70px 20px 20px 20px;
+    //margin: 0 auto;
+    //padding: 70px 20px 20px 20px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    .swWrap{
+        //background: #f00;
+        flex:1 0 auto;
+        height:90%;
+
+    }
 }
 
 .tabHeader {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
-    padding-left: 100px;
-    padding-bottom: 10px;
+
+
+    padding: 50px 20px 20px 120px;
 }
 
 .mainTitle {
@@ -66,7 +75,7 @@ $inactiveColor: #adadad;
 /*swiper style*/
 .swiper {
     //width: 1780px !important;
-    height: 650px !important;
+    height: 90% !important;
     padding: 60px 120px !important;
     background: none;
 }

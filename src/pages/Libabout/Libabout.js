@@ -32,18 +32,20 @@ function libabout() {
     return (
         <>
             <SubBackWrap>
-                <DepthTopMenu />
-                <Title>도서관 안내</Title>
-                <div className="libabout">
-                    <div className="libContainer">
-                        {menuList.map((item, idx) => {
-                            return <LibaboutBtn key={idx} item={item} />;
-                        })}
+                <DepthTopMenu/>
+                <div className="conWrap">
+                    <Title>도서관 안내</Title>
+                    <div className="libabout">
+                        <div className="libContainer">
+                            {menuList.map((item, idx) => {
+                                return <LibaboutBtn key={idx} item={item}/>;
+                            })}
+                        </div>
                     </div>
                 </div>
             </SubBackWrap>
         </>
-    );
+);
 }
 
 export default libabout;
