@@ -6,7 +6,7 @@ import SmoothLink from "./SmoothLink";
 function DepthTopMenu() {
   return (
     <div className="TopMenuWrap">
-     {/* <SmoothLink to={"/"}>
+      {/* <SmoothLink to={"/"}>
         <div className="TopMenuHome">
           <TopMenuIcon iconName="iconHome" />
         </div>
@@ -26,7 +26,7 @@ function SubTopMenu() {
   };
   return (
     <div className="TopMenuWrap">
-     {/* <SmoothLink to={"/"}>
+      {/* <SmoothLink to={"/"}>
         <div className="TopMenuHome">
           <TopMenuIcon iconName="iconHome" />
         </div>
@@ -38,12 +38,12 @@ function SubTopMenu() {
       >
         <TopMenuIcon iconName="iconMenu" />
       </div>
-      <div
+      {/* <div
         className="TopMenu"
         onClick={handleClose}
       >
         화면닫기
-      </div>
+      </div> */}
       {/* </Link> */}
     </div>
   );

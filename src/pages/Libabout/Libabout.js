@@ -33,8 +33,8 @@ function libabout() {
 
   return (
     <>
-        {/* AudioPlayer 컴포넌트를 호출하여 오디오 재생 시작 */}
-        <AudioPlayer src="/audio/audio_first.mp3" />
+      {/* AudioPlayer 컴포넌트를 호출하여 오디오 재생 시작 */}
+      <AudioPlayer src="/audio/01audio_output.mp3" />
 
       <SubBackWrap>
         <DepthTopMenu />
