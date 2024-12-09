@@ -22,7 +22,7 @@ function SubTopMenu() {
   };
   const handleClose = () => {
     //window.close(); // 현재 창 닫기
-    window.open("about:blank", "_self").close();
+    //window.open("about:blank", "_self").close();
     //alert("화면닫기");
   };
   return (
@@ -39,12 +39,12 @@ function SubTopMenu() {
       >
         <TopMenuIcon iconName="iconMenu" />
       </div>
-      <div
+      {/* <div
         className="TopMenu"
         onClick={handleClose}
       >
         화면닫기
-      </div>
+      </div> */}
       {/* </Link> */}
     </div>
   );
