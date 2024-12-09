@@ -21,8 +21,9 @@ function SubTopMenu() {
     navigate(-1); // 이전 페이지로 이동
   };
   const handleClose = () => {
-    window.close(); // 현재 창 닫기
-    alert("화면닫기");
+    //window.close(); // 현재 창 닫기
+    window.open("about:blank", "_self").close();
+    //alert("화면닫기");
   };
   return (
     <div className="TopMenuWrap">
@@ -38,12 +39,12 @@ function SubTopMenu() {
       >
         <TopMenuIcon iconName="iconMenu" />
       </div>
-      {/* <div
+      <div
         className="TopMenu"
         onClick={handleClose}
       >
         화면닫기
-      </div> */}
+      </div>
       {/* </Link> */}
     </div>
   );
