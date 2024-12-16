@@ -1,0 +1,225 @@
+{
+  "month": "12",
+  "event": [
+    {
+      "date": "1일 (일)",
+      "color": "red",
+      "program": []
+    },
+    {
+      "date": "2일 (월)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "3일 (화)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "4일 (수)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "5일 (목)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "6일 (금)",
+      "color": "",
+      "program": [
+        {
+          "content": "정기휴관일",
+          "icon": "type-r"
+        }
+      ]
+    },
+    {
+      "date": "7일 (토)",
+      "color": "blue",
+      "program": [
+        {
+          "content": "[강좌]2024년 12월 영화 및 음악 감상",
+          "icon": "type-e"
+        },
+        {
+          "content": "[영화]플레이모빌 - 더무비",
+          "icon": "type-m"
+        }
+      ]
+    },
+    {
+      "date": "8일 (일)",
+      "color": "red",
+      "program": []
+    },
+    {
+      "date": "9일 (월)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "10일 (화)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "11일 (수)",
+      "color": "",
+      "program": [
+        {
+          "content": "[강좌]2024년 12월 수요예술무대",
+          "icon": "type-e"
+        }
+      ]
+    },
+    {
+      "date": "12일 (목)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "13일 (금)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "14일 (토)",
+      "color": "blue",
+      "program": [
+        {
+          "content": "[강좌]2024년 12월 영화 및 음악 감상",
+          "icon": "type-e"
+        },
+        {
+          "content": "[강좌]2024년 12월 강서인디영화",
+          "icon": "type-e"
+        },
+        {
+          "content": "[영화]장손",
+          "icon": "type-m"
+        }
+      ]
+    },
+    {
+      "date": "15일 (일)",
+      "color": "red",
+      "program": [
+        {
+          "content": "[강좌][공연] 어린이뮤지컬 크리스마스 대소동",
+          "icon": "type-e"
+        }
+      ]
+    },
+    {
+      "date": "16일 (월)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "17일 (화)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "18일 (수)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "19일 (목)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "20일 (금)",
+      "color": "",
+      "program": [
+        {
+          "content": "정기휴관일",
+          "icon": "type-r"
+        }
+      ]
+    },
+    {
+      "date": "21일 (토)",
+      "color": "blue",
+      "program": [
+        {
+          "content": "[강좌]2024년 12월 영화 및 음악 감상",
+          "icon": "type-e"
+        },
+        {
+          "content": "[영화]레인맨",
+          "icon": "type-m"
+        }
+      ]
+    },
+    {
+      "date": "22일 (일)",
+      "color": "red",
+      "program": []
+    },
+    {
+      "date": "23일 (월)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "24일 (화)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "25일 (수)",
+      "color": "",
+      "program": [
+        {
+          "content": "성탄절",
+          "icon": "type-r"
+        }
+      ]
+    },
+    {
+      "date": "26일 (목)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "27일 (금)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "28일 (토)",
+      "color": "blue",
+      "program": [
+        {
+          "content": "[강좌]2024년 12월 영화 및 음악 감상",
+          "icon": "type-e"
+        },
+        {
+          "content": "[영화]꼬마산타 니콜라스",
+          "icon": "type-m"
+        }
+      ]
+    },
+    {
+      "date": "29일 (일)",
+      "color": "red",
+      "program": []
+    },
+    {
+      "date": "30일 (월)",
+      "color": "",
+      "program": []
+    },
+    {
+      "date": "31일 (화)",
+      "color": "",
+      "program": []
+    }
+  ]
+}

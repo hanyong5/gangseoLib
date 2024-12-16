@@ -2,6 +2,17 @@ $pointColor: #ee2b74;
 $defaultColor: #333333;
 $secondColor: #868686;
 $inactiveColor: #adadad;
+
+h1 {
+  width: 601px;
+  height: 85px;
+  margin: 0 auto 72px auto;
+  font-size: 0;
+  background-image: url("../images/logoGangseoLib.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Sub Layout */
 .subBgWrap {
   position: relative;
@@ -35,7 +46,7 @@ $inactiveColor: #adadad;
   position: fixed;
   display: flex;
   top: 0px;
-  right: 60px;
+  right: 0px;
   z-index: 100;
   .TopMenuHome {
     display: flex;
@@ -267,6 +278,23 @@ $inactiveColor: #adadad;
   align-items: center;
   width: 100%;
   height: 100%;
+  .viewBox {
+    width: 80%;
+    height: 50%;
+    background: white;
+    border: 10px solid #f1f1f1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    .text {
+      margin-top: 100px;
+      font-size: 3em;
+      height: 100px;
+    }
+  }
 }
 .mb-2 {
   margin-bottom: 20px !important;
@@ -278,16 +306,15 @@ $inactiveColor: #adadad;
   margin-bottom: 60px !important;
 }
 
-.conWrap{
+.conWrap {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  .titleWrap{}
-  .subCont{
-    //background: #f00;
-    flex:1 0  auto;
-    height:80%
+  .titleWrap {
   }
-
+  .subCont {
+    //background: #f00;
+    flex: 1 0 auto;
+    height: 80%;
+  }
 }
-

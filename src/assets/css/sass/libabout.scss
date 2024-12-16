@@ -2,20 +2,19 @@
   display: flex;
   justify-content: center;
   //align-items: center;
-  flex:1 0 auto;
-  padding-bottom: 100px;
+  flex: 1 0 auto;
+  padding-bottom: 130px;
   .libContainer {
     width: 90%;
     //height: 100vh;
     display: grid;
     grid-template-columns: repeat(4, 380px);
-    grid-template-rows: repeat(3, 240px);
+    grid-template-rows: repeat(3, 250px);
     gap: 10px;
     justify-content: space-between;
     align-content: space-between;
     //background: skyblue;
     .libAboutBtn {
-
       display: flex;
       flex-direction: column;
       gap: 0px;
@@ -33,7 +32,7 @@
       .libAboutTitle {
         font-size: 35px;
         color: #333333;
-        margin-bottom: 40px;
+        margin-top: 20px;
         text-align: center;
       }
     }
